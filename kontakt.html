@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kontakt</title>
+
+
+		<!-- === Favicon === -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/Users/jonas_code/Desktop/WEBDESIGN made simple/src/ing/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/Users/jonas_code/Desktop/WEBDESIGN made simple/src/ing/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/Users/jonas_code/Desktop/WEBDESIGN made simple/src/ing/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/Users/jonas_code/Desktop/WEBDESIGN made simple/src/ing/favicon/site.webmanifest">
+		<link rel="mask-icon" href="/Users/jonas_code/Desktop/WEBDESIGN made simple/src/ing/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#f0f0f0">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- === CSS == -->
+		<link rel="stylesheet" type="text/css" href="src/css/styles.css ">
+
+	</head>
+
+	<body>
+
+		<!-- === Navigationsleiste === -->
+
+		<nav id="header-nav">
+
+		<!-- === Desktop - Navigationsleiste === -->
+
+			<div class="container" id="desktop-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html" class="logo-link">
+							<img src="src/ing/webdesign-logo.png" alt="Logo von Webdesign made simple">
+						</a>
+
+
+						<ul>
+							<li><a href="index.html">Index</a></li>
+							<li><a href="Leistungen.html">Leistungen</a></li>
+							<li class="active"><a href="Kontakt.html">Kontakt</a></li>
+							<li><a href="Impressum.html">Impressum</a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- === Mobile - Navigationsleiste === -->
+
+			<div class="container" id="mobile-nav">
+				<div class="row">
+					<div class="col-6">
+
+						<a href="index.html">
+							<img src="src/ing/webdesign-logo.png" alt="Logo von Webdesign made simple">
+						</a>
+
+						<div class="clearfix" id="mobile-nav-dropdown">
+
+							<div id="mobile-nav-button"><span>&equiv;</span></div>
+
+							<div class="cleartfix" id="mobile-nav-content">
+								<ul>
+									<li><a href="index.html">Home </a></li>
+									<li><a href="Leistungen.html">Leistungen</a></li>
+									<li class="active"><a href="Kontakt.html">Kontakt</a></li>
+									<li><a href="Impressum.html">Impressum</a></li>
+								</ul>
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+		</nav>
+
+		<!-- ==== Header Banner === -->
+
+		<header id="header-banner-klein"></header>
+
+		<!-- === KONTAKT - BEREICH === -->
+
+		<section id="kontakt">
+
+			<div class="container">
+				<div class="row">
+						<div class="col-6">
+							<header class="intro-container">
+							<h1>Kontakt</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</header>
+					</div>
+				</div>
+
+				<form id="kontakt-formular" action="kontakt.html" method="post">
+					<div class="row">
+						<div class="col-3">
+							<label for="Vorname" class="screenreader">Vorname</label>
+							<input id="Vorname" type="text" name="Vorname" placeholder="Vorname">
+						</div>
+						<div class="col-3">
+							<label for="Nachname" class="screenreader">Nachname</label>
+							<input id="Nachname" type="text" name="Nachname" placeholder="Nachname">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6">
+							<label for="email" class="screenreader">E-Mail</label>
+							<input id="email" type="text" name="email" placeholder="E-Mail" pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-			\x09\x0b\x0c\x0e-\x7f])+)\])" title="Gebe eine gültige E-Mail Adresse ein">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6">
+							<label for="nachricht" class="screenreader">Nachricht</label>
+							<textarea id="nachricht" name="nachricht" placeholder="Nachricht"></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6"></div>
+					</div>
+					<button type="submit" class="btn-typ-3">Senden</button>
+
+				</div>
+			</form>
+
+		</section>
+
+		<!-- === FOOTER - BEREICH === -->
+
+		<footer id="footer">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<span>WEBDESIGN made Simple by Jonas Wolfram ( 2020 )</span>
+					<nav id="footer-nav"><a href="impressum.html">Impressum</a></nav>
+				</div>
+			</div>
+		</div>
+
+
+		</footer>
+
+	</body>
+
+</html>
